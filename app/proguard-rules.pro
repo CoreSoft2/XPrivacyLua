@@ -21,10 +21,10 @@
 -renamesourcefileattribute SourceFile
 
 #XPrivacyLua
--keep class eu.faircode.xlua.XLua {*; }
--keep class eu.faircode.xlua.XHook {*; }
--keep class eu.faircode.xlua.XParam {*; }
--keepnames class eu.faircode.xlua.** {*; }
+-keep class com.pivotsecuriy.xlua.XLua {*; }
+-keep class com.pivotsecuriy.xlua.XHook {*; }
+-keep class com.pivotsecuriy.xlua.XParam {*; }
+-keepnames class com.pivotsecuriy.xlua.** {*; }
 
 #LuaJ
 -dontwarn org.luaj.vm2.**

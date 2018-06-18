@@ -17,7 +17,7 @@
     Copyright 2017-2018 Marcel Bokhorst (M66B)
  */
 
-package eu.faircode.xlua;
+package com.pivotsecuriy.privacy;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
@@ -33,6 +33,8 @@ import android.view.ViewGroup;
 import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.pivotsecurity.privacy.R;
 
 import java.text.Collator;
 import java.util.ArrayList;

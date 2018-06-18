@@ -73,7 +73,7 @@ Installation
 ------------
 
 * Download, install and activate the [Xposed framework](http://forum.xda-developers.com/xposed)
-* Download, install and activate the [XPrivacyLua module](http://repo.xposed.info/module/eu.faircode.xlua)
+* Download, install and activate the [XPrivacyLua module](http://repo.xposed.info/module/com.pivotsecuriy.xlua)
 
 Frequently Asked Questions
 --------------------------

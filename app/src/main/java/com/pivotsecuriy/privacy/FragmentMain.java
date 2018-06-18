@@ -17,7 +17,7 @@
     Copyright 2017-2018 Marcel Bokhorst (M66B)
  */
 
-package eu.faircode.xlua;
+package com.pivotsecuriy.privacy;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -49,6 +49,9 @@ import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.Spinner;
 import android.widget.TextView;
+
+import com.pivotsecurity.privacy.BuildConfig;
+import com.pivotsecurity.privacy.R;
 
 import java.text.Collator;
 import java.util.ArrayList;

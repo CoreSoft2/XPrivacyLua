@@ -17,7 +17,7 @@
     Copyright 2017-2018 Marcel Bokhorst (M66B)
  */
 
-package eu.faircode.xlua;
+package com.pivotsecuriy.privacy;
 
 import android.content.Context;
 import android.content.DialogInterface;
@@ -51,6 +51,8 @@ import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import com.pivotsecurity.privacy.R;
 
 import java.util.Calendar;
 import java.util.concurrent.ExecutorService;
@@ -169,7 +171,7 @@ public class ActivityMain extends ActivityBase {
                 Intent companion = pm.getLaunchIntentForPackage(Util.PRO_PACKAGE_NAME);
                 if (companion == null) {
                     Intent browse = new Intent(Intent.ACTION_VIEW);
-                    browse.setData(Uri.parse("https://lua.xprivacy.eu/pro/"));
+                    browse.setData(Uri.parse("https://www.pivotsecurity.com"));
                     if (browse.resolveActivity(pm) == null)
                         Snackbar.make(findViewById(android.R.id.content), getString(R.string.msg_no_browser), Snackbar.LENGTH_LONG).show();
                     else
@@ -182,29 +184,7 @@ public class ActivityMain extends ActivityBase {
         drawerArray.add(new DrawerItem(this, R.string.menu_readme, new DrawerItem.IListener() {
             @Override
             public void onClick(DrawerItem item) {
-                Intent browse = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/M66B/XPrivacyLua"));
-                if (browse.resolveActivity(getPackageManager()) == null)
-                    Snackbar.make(findViewById(android.R.id.content), getString(R.string.msg_no_browser), Snackbar.LENGTH_LONG).show();
-                else
-                    startActivity(browse);
-            }
-        }));
-
-        drawerArray.add(new DrawerItem(this, R.string.menu_faq, new DrawerItem.IListener() {
-            @Override
-            public void onClick(DrawerItem item) {
-                Intent browse = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/M66B/XPrivacyLua/blob/master/FAQ.md"));
-                if (browse.resolveActivity(getPackageManager()) == null)
-                    Snackbar.make(findViewById(android.R.id.content), getString(R.string.msg_no_browser), Snackbar.LENGTH_LONG).show();
-                else
-                    startActivity(browse);
-            }
-        }));
-
-        drawerArray.add(new DrawerItem(this, R.string.menu_donate, new DrawerItem.IListener() {
-            @Override
-            public void onClick(DrawerItem item) {
-                Intent browse = new Intent(Intent.ACTION_VIEW, Uri.parse("https://lua.xprivacy.eu/"));
+                Intent browse = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.pivotsecurity.com"));
                 if (browse.resolveActivity(getPackageManager()) == null)
                     Snackbar.make(findViewById(android.R.id.content), getString(R.string.msg_no_browser), Snackbar.LENGTH_LONG).show();
                 else

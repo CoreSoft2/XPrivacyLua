@@ -17,7 +17,7 @@
     Copyright 2017-2018 Marcel Bokhorst (M66B)
  */
 
-package eu.faircode.xlua;
+package com.pivotsecuriy.privacy;
 
 import android.annotation.SuppressLint;
 import android.app.ActivityManager;
@@ -44,6 +44,9 @@ import android.os.RemoteException;
 import android.os.StrictMode;
 import android.provider.Settings;
 import android.util.Log;
+
+import com.pivotsecurity.privacy.BuildConfig;
+import com.pivotsecurity.privacy.R;
 
 import java.io.File;
 import java.lang.reflect.Method;

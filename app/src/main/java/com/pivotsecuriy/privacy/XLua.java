@@ -17,7 +17,7 @@
     Copyright 2017-2018 Marcel Bokhorst (M66B)
  */
 
-package eu.faircode.xlua;
+package com.pivotsecuriy.privacy;
 
 import android.app.Application;
 import android.content.ContentResolver;
@@ -33,6 +33,8 @@ import android.os.Process;
 import android.os.SystemClock;
 import android.support.annotation.NonNull;
 import android.util.Log;
+
+import com.pivotsecurity.privacy.BuildConfig;
 
 import org.luaj.vm2.Globals;
 import org.luaj.vm2.LuaClosure;

@@ -17,7 +17,7 @@
     Copyright 2017-2018 Marcel Bokhorst (M66B)
  */
 
-package eu.faircode.xlua;
+package com.pivotsecuriy.privacy;
 
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
@@ -28,6 +28,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.pivotsecurity.privacy.BuildConfig;
+import com.pivotsecurity.privacy.R;
 
 import java.util.Calendar;
 

@@ -17,23 +17,19 @@
     Copyright 2017-2018 Marcel Bokhorst (M66B)
  */
 
-package eu.faircode.xlua;
+package com.pivotsecuriy.privacy;
 
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import android.app.Application;
+import android.util.Log;
 
-public class ActivityBase extends AppCompatActivity {
-    private String theme;
+import com.pivotsecurity.privacy.BuildConfig;
+
+public class ApplicationEx extends Application {
+    private static final String TAG = "XLua.App";
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        theme = XProvider.getSetting(this, "global", "theme");
-        setTheme("dark".equals(theme) ? R.style.AppThemeDark : R.style.AppThemeLight);
-
-        super.onCreate(savedInstanceState);
-    }
-
-    String getThemeName() {
-        return (theme == null ? "light" : theme);
+    public void onCreate() {
+        super.onCreate();
+        Log.i(TAG, "Create version=" + BuildConfig.VERSION_NAME);
     }
 }

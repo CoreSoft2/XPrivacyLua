@@ -17,7 +17,7 @@
     Copyright 2017-2018 Marcel Bokhorst (M66B)
  */
 
-package eu.faircode.xlua;
+package com.pivotsecuriy.privacy;
 
 import android.app.Notification;
 import android.app.PendingIntent;
@@ -29,6 +29,9 @@ import android.content.res.Resources;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
+
+import com.pivotsecurity.privacy.BuildConfig;
+import com.pivotsecurity.privacy.R;
 
 import de.robv.android.xposed.XposedBridge;
 

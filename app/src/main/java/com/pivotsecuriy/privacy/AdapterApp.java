@@ -17,7 +17,7 @@
     Copyright 2017-2018 Marcel Bokhorst (M66B)
  */
 
-package eu.faircode.xlua;
+package com.pivotsecuriy.privacy;
 
 import android.content.Context;
 import android.content.Intent;
@@ -49,6 +49,7 @@ import android.widget.TextView;
 import com.bumptech.glide.load.DecodeFormat;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.request.RequestOptions;
+import com.pivotsecurity.privacy.R;
 
 import java.text.Collator;
 import java.util.ArrayList;

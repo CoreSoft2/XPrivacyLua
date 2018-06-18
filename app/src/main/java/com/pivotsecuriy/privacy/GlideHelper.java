@@ -1,4 +1,4 @@
-package eu.faircode.xlua;
+package com.pivotsecuriy.privacy;
 
 import com.bumptech.glide.annotation.GlideModule;
 import com.bumptech.glide.module.AppGlideModule;

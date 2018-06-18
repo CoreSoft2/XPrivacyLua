@@ -17,7 +17,7 @@
     Copyright 2017-2018 Marcel Bokhorst (M66B)
  */
 
-package eu.faircode.xlua;
+package com.pivotsecuriy.privacy;
 
 import android.app.Dialog;
 import android.app.Notification;
@@ -40,6 +40,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.util.TypedValue;
 
+import com.pivotsecurity.privacy.BuildConfig;
+import com.pivotsecurity.privacy.R;
+
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
 import java.security.MessageDigest;
@@ -47,7 +50,7 @@ import java.security.MessageDigest;
 class Util {
     private final static String TAG = "XLua.Util";
 
-    static final String PRO_PACKAGE_NAME = "eu.faircode.xlua.pro";
+    static final String PRO_PACKAGE_NAME = "com.pivotsecuriy.xlua.pro";
     private static final int PER_USER_RANGE = 100000;
 
     static void setPermissions(String path, int mode, int uid, int gid) {
